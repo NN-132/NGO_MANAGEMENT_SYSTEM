@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #dfe9f5 ;
+}
+.container{
+    display: flex;  
+}
+
+nav{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #fff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+ul li{
+    list-style: none;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+ul li a{
+    color: rgb(25, 20, 20);
+    font-weight: bold;
+}
+ul li a:hover{
+    color: rgb(38, 65, 76);
+    text-decoration: none;
+}
+
+.blank-space {
+    background-image: url(loan3.jpg);
+    background-size: background;
+    height: 780px;
+    width: 1280px;
+    margin: 0 auto;
+  }

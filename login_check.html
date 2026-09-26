@@ -1,0 +1,51 @@
+<?php
+
+$host="localhost";
+
+$user="root";
+
+$password="";
+
+$db="NGO";
+
+
+$data=mysqli_connect($host,$user,$password,$db);
+
+
+if($data===false)
+{
+    die("connection error");
+}
+
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $name = $_POST['NID'];
+    $pass = $_POST['Password'];
+    
+    $sql = "select * from user where username= '".$name."' AND password= '".$pass."' ";
+
+    $result=mysqli_query($data,$sql);
+
+    $row=mysqli_fetch_array($result);
+
+    if($row["usertype"]=="student")
+    {
+        header("location:loanee_panel.php");
+    }
+    else if($row["usertype"]=="admin")
+    {
+        header("location:admin_panel_main.php");
+    }
+    else
+    {
+        session_start();
+        
+        $message="Username or password do not match";
+
+        $_SESSION['loginMessage']=$message;
+
+        header("location:sign_in.php");
+    }
+}
+
+?>

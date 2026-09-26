@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css?v=<?php echo time(); ?>">
+    <title>ABOUT US</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">About us</a></li>
+                <li><a href="home.html" class="link">Home</a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div id="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <i class="fas fa-book"></i>
+                                <h3>MISSION</h3>
+                                <hr>
+                                <p>
+                                    1. Empower individuals and communities to take control of their lives and futures by providing them with the necessary resources, education, and support.
+                                </p>
+                                <p>
+                                    2. Inspire individuals and communities to become agents of change, encouraging active participation and leadership in our shared mission.
+                                </p>
+                                <p>
+                                    3. Raise awareness and educate the public about hunger, its implications, and the actions needed to address it effectively.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <i class="fas fa-globe"></i>
+                                <h3>VISION</h3>
+                                <hr>
+                                <p>
+                                    1. Sustainability is the norm, with our planet thriving through responsible stewardship, and future generations inheriting a world that is healthier and more resilient.
+                                </p>
+                                <p>
+                                    2. Hope and Possibility abound, inspiring individuals and communities to dream big, act boldly, and create a brighter, more inclusive future for all.
+                                </p>
+                                <p>
+                                    3. Equality and Justice prevail, where every individual's rights are protected, and all have equal opportunities for growth and prosperity.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <i class="fa fa-pen"></i>
+                                <h3>ACCOMPLISHMENTS</h3>
+                                <hr>
+                                <p>
+                                    1. Is the main information provider for Bangladeshi nonprofits, publishing weekly electronic newsletter, quarterly NGO magazine, electronic newsletters in English and Bangla in every two months, handbooks and leaflets.
+                                </p>
+                                <p>
+                                    2. Launched a number of development projects like co-operation with local governments, good governance for Board development, philanthropy development with businesses, mapping and training Bangladeshi umbrella organizations, etc.
+                                </p>
+                                <p>
+                                    3. Carries out training programs for NGOs and public sector representatives on different topics related to civil society and cooperation between NGOs and public sector.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+   function myMenuFunction()
+    {
+        var i = document.getElementById("navMenu");
+        if(i.className === "nav-menu")
+        {
+            i.className += " responsive";
+        }
+        else
+        {
+            i.className = "nav-menu";
+        }
+    }
+    </script>
+</div>
+</body>
+</html>
